@@ -1,14 +1,12 @@
-import unittest
+import pytest
 
 def hello(name):
     return 'Hello ' + name
 
 
-class Test(unittest.TestCase):
-    def test_hello(self):
+def test_hello():
         assert hello('Celine') == 'Hello Celine'
 
-unittest.main()
 
 
 
