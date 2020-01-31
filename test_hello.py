@@ -5,7 +5,7 @@ def hello(name):
 
 
 def test_hello():
-        assert hello('Celine') == 'Hello Celine'
+    assert hello('Celine') == 'Hello Celine'
 
 
 
