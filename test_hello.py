@@ -1,8 +1,14 @@
-import pytest
+import unittest
 
 def hello(name):
     return 'Hello ' + name
 
-def test_hello():
-    assert hello('Celine') == 'Hello Celine'
+
+class Test(unittest.TestCase):
+    def test_hello(self):
+        assert hello('Celine') == 'Hello Celine'
+
+unittest.main()
+
+
 
