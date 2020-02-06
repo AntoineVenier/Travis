@@ -5,9 +5,11 @@ python:
 install:
   - pip3 install -r requirements.txt
   - pip3 install coveralls
+  - pip3 install coverage
 # command to run tests
 script:
   - pytest
+  -coverage run test_hello.py
 #Command to use coverage 
 after_success:
   - coveralls
